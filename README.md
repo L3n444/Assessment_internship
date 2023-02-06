@@ -1,17 +1,23 @@
 
-RAPPEL : 
-Ce petit projet doit permettre à l'utilisateur de visualiser des modèles 3D depuis son appareil (téléphone, tablette)à partir d'une image. Il peut également changer de modèle. S'il clique sur le modèle visualisé, un menu appparaît sur l'écran contenant des informations.
+This project uses the game engine Unity and AR Foundation. 
 
-Ce projet est séparé en deux dossiers principaux : 
-    - Original files : il contient les fichiers originaux lors de l'utilisation d'un AR template. Ce fichier n'est donc pas de moi et je n'ai rien modifié dans celui-ci.
+Goal : this program allows the user to visualize 3D models from their device (computer, phone, tablet).
 
-    - Work : il contient mon travail, c'est-à-dire, le petit projet demandé. On peut y retrouvé 3 dossiers. 
-        - Models : il contient les modèles utilisés pour la démo. Ils ont été téléchargé avec le lien que vous m'avez donné par mail.
+Use : To use this project, you have to download these folders and add them on Unity to create a Unity project. Then you have to build it with Android or iOS. 
+My program can work on computer or on phone/tablet.
 
-        - Scripts : il contient les scripts du projet.
+Hierarchy : 
+This project contains files from the AR template. They are not mine. 
+My files are in the folder "Assets" and they are separated according to their role (script, model, scene). 
 
-        Chaque script s'occupe d'une partie précise du projet. Le fichier "Menu" s'occupe de faire apparaitre et disparaitre un menu lorsque le modèle est cliqué (souris ou doigts suivant l'appareil utilisé) 
+	Files : 
+	- Click : this files detects when the user click on the screen with his finger (phone/tablet) or with a mouse (computer). 
 
+	- MainMenu : this files manages the differents menus (main menu, changeModel menu,...) and also the buttons (open and close the menu windows).
+
+	- ToggleSettings : this files manages the ToggleGroup which allows the user to choose a different model. 
+
+The different windows are on the same canvas and on the same scene.  
 
 
 Ce projet a été programmé pour fonctionner sur ordinateur (détection du clic de la souris) ou sur tablette/téléphone (détection de la pression du doigts). Cependant, je n'ai pu vérifier que la fonctionnalité (téléphone et tablette) car mon ordinateur ne possède pas de capteur AR. De plus, possédant des appareils Apple (iPhone et iPad), les tests ont été effectués avec le module OS d'Unity et non avec celui d'Android. 
